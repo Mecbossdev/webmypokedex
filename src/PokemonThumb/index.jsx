@@ -1,9 +1,8 @@
 import React from 'react';
 
-const PokemonThumb = ({id, name, image, type}) => {
-  const style = `thumb-container ${type}`
-  
-  return(
+export const PokemonThumb = ({id, name, image, type}) => {
+  const style = `thumb-container ${type}`;
+
     <div className={style}>
       <div className='number'>
         <small>#0{id}</small>
@@ -15,7 +14,5 @@ const PokemonThumb = ({id, name, image, type}) => {
       </div>
 
     </div>
-  )
+  
 }
-
-export default PokemonThumb;
